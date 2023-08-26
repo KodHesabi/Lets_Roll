@@ -40,8 +40,8 @@ namespace Lets_Roll
             this.button1 = new System.Windows.Forms.Button();
             this.WaifuBox = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Husband = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.Husband = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -159,18 +159,6 @@ namespace Lets_Roll
             this.panel1.Size = new System.Drawing.Size(200, 243);
             this.panel1.TabIndex = 10;
             // 
-            // Husband
-            // 
-            this.Husband.AutoSize = true;
-            this.Husband.BackColor = System.Drawing.Color.Yellow;
-            this.Husband.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Husband.Location = new System.Drawing.Point(20, 96);
-            this.Husband.Name = "Husband";
-            this.Husband.Size = new System.Drawing.Size(98, 24);
-            this.Husband.TabIndex = 10;
-            this.Husband.Text = "Husband";
-            this.Husband.UseVisualStyleBackColor = false;
-            // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
@@ -182,6 +170,18 @@ namespace Lets_Roll
             this.checkBox1.TabIndex = 11;
             this.checkBox1.Text = "Waifu/Husband";
             this.checkBox1.UseVisualStyleBackColor = false;
+            // 
+            // Husband
+            // 
+            this.Husband.AutoSize = true;
+            this.Husband.BackColor = System.Drawing.Color.Yellow;
+            this.Husband.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Husband.Location = new System.Drawing.Point(20, 96);
+            this.Husband.Name = "Husband";
+            this.Husband.Size = new System.Drawing.Size(98, 24);
+            this.Husband.TabIndex = 10;
+            this.Husband.Text = "Husband";
+            this.Husband.UseVisualStyleBackColor = false;
             // 
             // YetkiliAnasayfa
             // 
