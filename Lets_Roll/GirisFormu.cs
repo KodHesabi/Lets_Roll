@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Lets_Roll
 {
-    public partial class Form1 : Form
+    public partial class GirisSayfası : Form
     {
-        public Form1()
+        public GirisSayfası()
         {
             InitializeComponent();
         }
