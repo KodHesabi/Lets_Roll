@@ -62,6 +62,18 @@
     <Compile Include="GirisFormu.Designer.cs">
       <DependentUpon>GirisFormu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Haremleri_Görüntüle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Haremleri_Görüntüle.Designer.cs">
+      <DependentUpon>Haremleri_Görüntüle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Harem_İşlemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Harem_İşlemleri.Designer.cs">
+      <DependentUpon>Harem_İşlemleri.cs</DependentUpon>
+    </Compile>
     <Compile Include="Husband.cs" />
     <Compile Include="KarekterlerContext.cs" />
     <Compile Include="Migrations\Configuration.cs" />
@@ -82,6 +94,12 @@
     </Compile>
     <EmbeddedResource Include="GirisFormu.resx">
       <DependentUpon>GirisFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Haremleri_Görüntüle.resx">
+      <DependentUpon>Haremleri_Görüntüle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Harem_İşlemleri.resx">
+      <DependentUpon>Harem_İşlemleri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
