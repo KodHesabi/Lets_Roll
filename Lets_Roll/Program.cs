@@ -16,7 +16,7 @@ namespace Lets_Roll
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Haremleri_Görüntüle());
+            Application.Run(new YetkiliAnasayfa());
         }
     }
 }

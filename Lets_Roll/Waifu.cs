@@ -17,5 +17,7 @@ namespace Lets_Roll
 
         public string A2text { get; set; }
 
+        public string ResimYolu { get; set; }
+
     }
 }

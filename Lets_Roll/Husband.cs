@@ -16,5 +16,7 @@ namespace Lets_Roll
         public string SeriAdi { get; set; }
 
         public string A2text { get; set; }
+
+        public string ResimYolu { get; set; }
     }
 }
