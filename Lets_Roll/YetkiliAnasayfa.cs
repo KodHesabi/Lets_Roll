@@ -59,6 +59,33 @@ namespace Lets_Roll
                 }
             }
 
+           else if (Husband.Checked)
+            {
+                karakterler.Husband.Add(
+                    new Husband
+                    {
+                        KarekterAdi = textBox1.Text,
+                        KarekterRank = Convert.ToInt32(textBox2.Text),
+                        SeriAdi = textBox3.Text,
+                        A2text = textBox4.Text,
+                        ResimYolu = textBox5.Text,
+
+                    }
+
+                    );
+                var k = karakterler.SaveChanges();
+
+                if (k != 0)
+                {
+                    MessageBox.Show("Başarıyla Kaydedildi", "Uyarı");
+                }
+            }
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+         
         }
     }
 }

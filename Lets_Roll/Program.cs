@@ -16,7 +16,7 @@ namespace Lets_Roll
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new YetkiliAnasayfa());
+            Application.Run(new RollAnaSayfa());
         }
     }
 }
