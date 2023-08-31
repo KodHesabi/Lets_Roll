@@ -8,6 +8,15 @@ namespace Lets_Roll
 {
     class MixTablosu
     {
-        public int KarakterAdi { get; set; }
+        public int Id { get; set; }
+        public string KarekterAdi { get; set; }
+
+        public int KarekterRank { get; set; }
+
+        public string SeriAdi { get; set; }
+
+        public string A2text { get; set; }
+
+        public string ResimYolu { get; set; }
     }
 }

@@ -265,15 +265,15 @@ namespace Lets_Roll
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(37, 356);
+            this.pictureBox1.Location = new System.Drawing.Point(35, 363);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(229, 225);
+            this.pictureBox1.Size = new System.Drawing.Size(229, 227);
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(315, 356);
+            this.pictureBox2.Location = new System.Drawing.Point(315, 364);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(229, 225);
             this.pictureBox2.TabIndex = 14;
@@ -281,7 +281,7 @@ namespace Lets_Roll
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(595, 356);
+            this.pictureBox3.Location = new System.Drawing.Point(595, 364);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(234, 225);
             this.pictureBox3.TabIndex = 15;
@@ -289,7 +289,7 @@ namespace Lets_Roll
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(874, 356);
+            this.pictureBox4.Location = new System.Drawing.Point(874, 364);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(235, 225);
             this.pictureBox4.TabIndex = 16;
@@ -297,7 +297,7 @@ namespace Lets_Roll
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(1160, 356);
+            this.pictureBox5.Location = new System.Drawing.Point(1160, 363);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(244, 225);
             this.pictureBox5.TabIndex = 17;

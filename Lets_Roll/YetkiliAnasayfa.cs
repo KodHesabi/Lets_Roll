@@ -37,6 +37,10 @@ namespace Lets_Roll
         KarekterlerContext karakterler = new KarekterlerContext();
         private void button1_Click(object sender, EventArgs e)
         {
+            if(WaifuBox.Checked == false && Husband.Checked == false && MixBox.Checked == false)
+            {
+                MessageBox.Show("Veriyi hangi tabloya eklemek istiyorsunuz _?_");
+            }
             if(WaifuBox.Checked)
             {
                 karakterler.Waifu.Add(
@@ -84,8 +88,8 @@ namespace Lets_Roll
 
             else if (MixBox.Checked)
             {
-                karakterler.Husband.Add(
-                    new Husband
+                karakterler.MixTablosu.Add(
+                    new MixTablosu
                     {
                         KarekterAdi = textBox1.Text,
                         KarekterRank = Convert.ToInt32(textBox2.Text),

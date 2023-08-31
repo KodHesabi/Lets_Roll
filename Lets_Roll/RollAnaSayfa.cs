@@ -41,7 +41,11 @@ namespace Lets_Roll
             int random = a.Next(1,2);
 
 
+            if (checkBox1.Checked == false && checkBox2.Checked == false && checkBox3.Checked == false)
+            {
+                MessageBox.Show("Lütfen roll atmak istediğiniz türü seçiniz...!");
 
+            }
 
             if (checkBox1.Checked && i == 5)
             {
@@ -114,11 +118,7 @@ namespace Lets_Roll
                 MessageBox.Show("Roll Hakkınız Bitti");
             }
 
-            if(checkBox1.Checked==false && checkBox2.Checked==false && checkBox3.Checked==false)
-            {
-                MessageBox.Show("Lütfen roll atmak istediğiniz türü seçiniz...!");
-
-            }
+            
                     
 
             

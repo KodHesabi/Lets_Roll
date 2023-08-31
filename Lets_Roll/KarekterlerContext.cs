@@ -12,5 +12,7 @@ namespace Lets_Roll
     {
         public DbSet<Waifu> Waifu { get; set; }
         public DbSet<Husband> Husband { get; set; }
+
+        public DbSet<MixTablosu> MixTablosu { get; set; }
     }
 }
