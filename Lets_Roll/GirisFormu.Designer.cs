@@ -65,6 +65,7 @@ namespace Lets_Roll
             this.Controls.Add(this.rolleyelimbutonu);
             this.Controls.Add(this.yetkiligirisibutonu);
             this.Name = "GirisSayfası";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Giriş";
             this.ResumeLayout(false);
 

@@ -40,7 +40,7 @@ namespace Lets_Roll
             this.button1 = new System.Windows.Forms.Button();
             this.WaifuBox = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.MixBox = new System.Windows.Forms.CheckBox();
             this.Husband = new System.Windows.Forms.CheckBox();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -156,7 +156,7 @@ namespace Lets_Roll
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.checkBox1);
+            this.panel1.Controls.Add(this.MixBox);
             this.panel1.Controls.Add(this.Husband);
             this.panel1.Controls.Add(this.WaifuBox);
             this.panel1.Location = new System.Drawing.Point(27, 115);
@@ -164,17 +164,17 @@ namespace Lets_Roll
             this.panel1.Size = new System.Drawing.Size(200, 243);
             this.panel1.TabIndex = 10;
             // 
-            // checkBox1
+            // MixBox
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Beige;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.checkBox1.Location = new System.Drawing.Point(20, 169);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(146, 24);
-            this.checkBox1.TabIndex = 11;
-            this.checkBox1.Text = "Waifu/Husband";
-            this.checkBox1.UseVisualStyleBackColor = false;
+            this.MixBox.AutoSize = true;
+            this.MixBox.BackColor = System.Drawing.Color.Beige;
+            this.MixBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.MixBox.Location = new System.Drawing.Point(20, 169);
+            this.MixBox.Name = "MixBox";
+            this.MixBox.Size = new System.Drawing.Size(146, 24);
+            this.MixBox.TabIndex = 11;
+            this.MixBox.Text = "Waifu/Husband";
+            this.MixBox.UseVisualStyleBackColor = false;
             // 
             // Husband
             // 
@@ -236,6 +236,7 @@ namespace Lets_Roll
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Name = "YetkiliAnasayfa";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "YetkiliAnasayfa";
             this.Load += new System.EventHandler(this.YetkiliAnasayfa_Load);
             this.panel1.ResumeLayout(false);
@@ -259,7 +260,7 @@ namespace Lets_Roll
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.CheckBox WaifuBox;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox MixBox;
         private System.Windows.Forms.CheckBox Husband;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox1;

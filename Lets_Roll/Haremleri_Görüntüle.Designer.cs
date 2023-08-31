@@ -82,6 +82,7 @@ namespace Lets_Roll
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "Haremleri_Görüntüle";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Haremleri_Görüntüle";
             this.ResumeLayout(false);
             this.PerformLayout();

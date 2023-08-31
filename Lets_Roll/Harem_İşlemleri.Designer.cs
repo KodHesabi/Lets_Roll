@@ -84,6 +84,7 @@ namespace Lets_Roll
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.listBox1);
             this.Name = "Harem_İşlemleri";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Harem_İşlemleri";
             this.ResumeLayout(false);
 

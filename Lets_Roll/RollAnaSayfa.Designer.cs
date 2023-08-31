@@ -157,9 +157,9 @@ namespace Lets_Roll
             this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 18;
-            this.listBox1.Location = new System.Drawing.Point(10, 247);
+            this.listBox1.Location = new System.Drawing.Point(16, 253);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(263, 328);
+            this.listBox1.Size = new System.Drawing.Size(263, 346);
             this.listBox1.TabIndex = 6;
             // 
             // listBox2
@@ -167,9 +167,9 @@ namespace Lets_Roll
             this.listBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.listBox2.FormattingEnabled = true;
             this.listBox2.ItemHeight = 18;
-            this.listBox2.Location = new System.Drawing.Point(292, 247);
+            this.listBox2.Location = new System.Drawing.Point(298, 253);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(263, 328);
+            this.listBox2.Size = new System.Drawing.Size(263, 346);
             this.listBox2.TabIndex = 7;
             // 
             // listBox3
@@ -177,9 +177,9 @@ namespace Lets_Roll
             this.listBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.listBox3.FormattingEnabled = true;
             this.listBox3.ItemHeight = 18;
-            this.listBox3.Location = new System.Drawing.Point(573, 247);
+            this.listBox3.Location = new System.Drawing.Point(579, 253);
             this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(263, 328);
+            this.listBox3.Size = new System.Drawing.Size(263, 346);
             this.listBox3.TabIndex = 8;
             // 
             // listBox4
@@ -187,9 +187,9 @@ namespace Lets_Roll
             this.listBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.listBox4.FormattingEnabled = true;
             this.listBox4.ItemHeight = 18;
-            this.listBox4.Location = new System.Drawing.Point(854, 247);
+            this.listBox4.Location = new System.Drawing.Point(860, 253);
             this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(263, 328);
+            this.listBox4.Size = new System.Drawing.Size(263, 346);
             this.listBox4.TabIndex = 9;
             // 
             // listBox5
@@ -197,16 +197,16 @@ namespace Lets_Roll
             this.listBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.listBox5.FormattingEnabled = true;
             this.listBox5.ItemHeight = 18;
-            this.listBox5.Location = new System.Drawing.Point(1135, 247);
+            this.listBox5.Location = new System.Drawing.Point(1141, 253);
             this.listBox5.Name = "listBox5";
-            this.listBox5.Size = new System.Drawing.Size(263, 328);
+            this.listBox5.Size = new System.Drawing.Size(282, 346);
             this.listBox5.TabIndex = 10;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Yellow;
             this.button1.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(1174, 581);
+            this.button1.Location = new System.Drawing.Point(1180, 605);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(224, 50);
             this.button1.TabIndex = 12;
@@ -265,41 +265,41 @@ namespace Lets_Roll
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(27, 395);
+            this.pictureBox1.Location = new System.Drawing.Point(37, 356);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(229, 168);
+            this.pictureBox1.Size = new System.Drawing.Size(229, 225);
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(315, 395);
+            this.pictureBox2.Location = new System.Drawing.Point(315, 356);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(229, 168);
+            this.pictureBox2.Size = new System.Drawing.Size(229, 225);
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(588, 395);
+            this.pictureBox3.Location = new System.Drawing.Point(595, 356);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(234, 168);
+            this.pictureBox3.Size = new System.Drawing.Size(234, 225);
             this.pictureBox3.TabIndex = 15;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(865, 395);
+            this.pictureBox4.Location = new System.Drawing.Point(874, 356);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(235, 168);
+            this.pictureBox4.Size = new System.Drawing.Size(235, 225);
             this.pictureBox4.TabIndex = 16;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(1145, 395);
+            this.pictureBox5.Location = new System.Drawing.Point(1160, 356);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(244, 168);
+            this.pictureBox5.Size = new System.Drawing.Size(244, 225);
             this.pictureBox5.TabIndex = 17;
             this.pictureBox5.TabStop = false;
             // 
@@ -318,7 +318,7 @@ namespace Lets_Roll
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.ClientSize = new System.Drawing.Size(1412, 643);
+            this.ClientSize = new System.Drawing.Size(1435, 667);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
@@ -338,7 +338,9 @@ namespace Lets_Roll
             this.Controls.Add(this.RollButonu);
             this.Controls.Add(this.panel1);
             this.Name = "RollAnaSayfa";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RollAnaSayfa";
+            this.Load += new System.EventHandler(this.RollAnaSayfa_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

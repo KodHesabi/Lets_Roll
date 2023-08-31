@@ -38,12 +38,12 @@ namespace Lets_Roll
         private void RollButonu_Click(object sender, EventArgs e)
         {
             Random a = new Random();
-            int random = a.Next(2,6);
-
-            
+            int random = a.Next(1,2);
 
 
-            if (checkBox1.Checked &&  i == 5)
+
+
+            if (checkBox1.Checked && i == 5)
             {
                 var k = karekterler1.Waifu.Find(random);
                 listBox1.Items.Add(k.KarekterAdi);
@@ -109,9 +109,15 @@ namespace Lets_Roll
                 textBox5.Text = Convert.ToString(i);
 
             }
-            else
+            else if(checkBox1.Checked && i < 1)
             {
                 MessageBox.Show("Roll Hakkınız Bitti");
+            }
+
+            if(checkBox1.Checked==false && checkBox2.Checked==false && checkBox3.Checked==false)
+            {
+                MessageBox.Show("Lütfen roll atmak istediğiniz türü seçiniz...!");
+
             }
                     
 
@@ -231,6 +237,11 @@ namespace Lets_Roll
 
 
 
+
+        }
+
+        private void RollAnaSayfa_Load(object sender, EventArgs e)
+        {
 
         }
     }
