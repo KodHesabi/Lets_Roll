@@ -37,11 +37,24 @@ namespace Lets_Roll
         KarekterlerContext karakterler = new KarekterlerContext();
         private void button1_Click(object sender, EventArgs e)
         {
+            //Checkbox kontrolleri .
+
             if(WaifuBox.Checked == false && Husband.Checked == false && MixBox.Checked == false)
             {
                 MessageBox.Show("Veriyi hangi tabloya eklemek istiyorsunuz _?_");
             }
-            if(WaifuBox.Checked)
+            else if(WaifuBox.Checked == true && Husband.Checked==true && MixBox.Checked==true)
+            {
+                MessageBox.Show("Lütfen tek bir tablo seçiniz...!");
+            }
+
+            else if (WaifuBox.Checked == true && Husband.Checked == true && MixBox.Checked == false || WaifuBox.Checked == true && Husband.Checked == false && MixBox.Checked == true || WaifuBox.Checked == false && Husband.Checked == true && MixBox.Checked == true)
+            {
+                MessageBox.Show("Lütfen tek bir tablo seçiniz...!");
+            }
+
+            // Seçili check ox a göre ilgili tablolara veri ekleme işlemleri.
+            if (WaifuBox.Checked)
             {
                 karakterler.Waifu.Add(
                     new Waifu
@@ -60,6 +73,10 @@ namespace Lets_Roll
                 if (k != 0)
                 {
                     MessageBox.Show("Başarıyla Kaydedildi", "Uyarı");
+                }
+                else
+                {
+                    MessageBox.Show("Tekrar Deneyiniz", "Uyarı");
                 }
             }
 
