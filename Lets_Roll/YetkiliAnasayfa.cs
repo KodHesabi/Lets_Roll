@@ -27,7 +27,7 @@ namespace Lets_Roll
         private void button2_Click(object sender, EventArgs e)
         {
             OpenFileDialog dosya = new OpenFileDialog();
-            dosya.Filter = "Resim Dosyası |*.jpg;*.nef;*.png |  Tüm Dosyalar |*.*";
+            dosya.Filter = "Resim Dosyası |*.jpg;*.nef;*.png;*.gif  |  Tüm Dosyalar |*.*";
             dosya.ShowDialog();
             string dosyayolu = dosya.FileName;
             textBox5.Text = dosyayolu;
@@ -48,7 +48,9 @@ namespace Lets_Roll
                 MessageBox.Show("Lütfen tek bir tablo seçiniz...!");
             }
 
-            else if (WaifuBox.Checked == true && Husband.Checked == true && MixBox.Checked == false || WaifuBox.Checked == true && Husband.Checked == false && MixBox.Checked == true || WaifuBox.Checked == false && Husband.Checked == true && MixBox.Checked == true)
+            else if (WaifuBox.Checked == true && Husband.Checked == true && MixBox.Checked == false 
+                || WaifuBox.Checked == true && Husband.Checked == false && MixBox.Checked == true 
+                || WaifuBox.Checked == false && Husband.Checked == true && MixBox.Checked == true)
             {
                 MessageBox.Show("Lütfen tek bir tablo seçiniz...!");
             }
@@ -56,11 +58,13 @@ namespace Lets_Roll
             // Seçili check ox a göre ilgili tablolara veri ekleme işlemleri.
             if (WaifuBox.Checked)
             {
-                karakterler.Waifu.Add(
+                try
+                {
+                    karakterler.Waifu.Add(
                     new Waifu
                     {
                         KarekterAdi = textBox1.Text,
-                        KarekterRank = Convert.ToInt32( textBox2.Text),
+                        KarekterRank = Convert.ToInt32(textBox2.Text),
                         SeriAdi = textBox3.Text,
                         A2text = textBox4.Text,
                         ResimYolu = textBox5.Text,
@@ -68,21 +72,29 @@ namespace Lets_Roll
                     }
 
                     );
-                var k = karakterler.SaveChanges();
+                    var k = karakterler.SaveChanges();
 
-                if (k != 0)
+                    if (k != 0)
+                    {
+                        MessageBox.Show("Başarıyla Kaydedildi", "Uyarı");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Tekrar Deneyiniz", "Uyarı");
+                    }
+
+                }catch(Exception err)
                 {
-                    MessageBox.Show("Başarıyla Kaydedildi", "Uyarı");
+                    MessageBox.Show("Hata" + err.Message);
                 }
-                else
-                {
-                    MessageBox.Show("Tekrar Deneyiniz", "Uyarı");
-                }
+                
             }
 
            else if (Husband.Checked)
             {
-                karakterler.Husband.Add(
+                try
+                {
+                    karakterler.Husband.Add(
                     new Husband
                     {
                         KarekterAdi = textBox1.Text,
@@ -94,12 +106,18 @@ namespace Lets_Roll
                     }
 
                     );
-                var k = karakterler.SaveChanges();
+                    var k = karakterler.SaveChanges();
 
-                if (k != 0)
+                    if (k != 0)
+                    {
+                        MessageBox.Show("Başarıyla Kaydedildi", "Uyarı");
+                    }
+
+                }catch(Exception err)
                 {
-                    MessageBox.Show("Başarıyla Kaydedildi", "Uyarı");
+                    MessageBox.Show("Hata" + err.Message);
                 }
+                
             }
 
 
@@ -124,6 +142,12 @@ namespace Lets_Roll
                     MessageBox.Show("Başarıyla Kaydedildi", "Uyarı");
                 }
             }
+
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+            textBox5.Text = "";
 
         }
 

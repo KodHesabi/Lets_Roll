@@ -38,7 +38,7 @@ namespace Lets_Roll
         private void RollButonu_Click(object sender, EventArgs e)
         {
             Random a = new Random();
-            int random = a.Next(1,2);
+            int random = a.Next(4,5);
 
 
             if (checkBox1.Checked == false && checkBox2.Checked == false && checkBox3.Checked == false)
@@ -118,12 +118,89 @@ namespace Lets_Roll
                 MessageBox.Show("Roll Hakkınız Bitti");
             }
 
-            
-                    
 
-            
 
-            
+
+            // Checkboxx 2 için roll seçimi
+   
+
+            if (checkBox2.Checked && i == 5)
+            {
+                var k = karekterler1.Husband.Find(random);
+                listBox1.Items.Add(k.KarekterAdi);
+                listBox1.Items.Add(k.KarekterRank);
+                listBox1.Items.Add(k.SeriAdi);
+                listBox1.Items.Add(k.A2text);
+                pictureBox1.ImageLocation = k.ResimYolu;
+                i--;
+                textBox5.Text = Convert.ToString(i);
+
+
+            }
+
+
+            else if (checkBox2.Checked && i == 4)
+            {
+                var k = karekterler1.Husband.Find(random);
+                listBox2.Items.Add(k.KarekterAdi);
+                listBox2.Items.Add(k.KarekterRank);
+                listBox2.Items.Add(k.SeriAdi);
+                listBox2.Items.Add(k.A2text);
+                pictureBox2.ImageLocation = k.ResimYolu;
+                i--;
+                textBox5.Text = Convert.ToString(i);
+
+            }
+
+            else if (checkBox2.Checked && i == 3)
+            {
+                var k = karekterler1.Husband.Find(random);
+                listBox3.Items.Add(k.KarekterAdi);
+                listBox3.Items.Add(k.KarekterRank);
+                listBox3.Items.Add(k.SeriAdi);
+                listBox3.Items.Add(k.A2text);
+                pictureBox3.ImageLocation = k.ResimYolu;
+                i--;
+                textBox5.Text = Convert.ToString(i);
+
+            }
+
+            else if (checkBox2.Checked && i == 2)
+            {
+                var k = karekterler1.Husband.Find(random);
+                listBox4.Items.Add(k.KarekterAdi);
+                listBox4.Items.Add(k.KarekterRank);
+                listBox4.Items.Add(k.SeriAdi);
+                listBox4.Items.Add(k.A2text);
+                pictureBox4.ImageLocation = k.ResimYolu;
+                i--;
+                textBox5.Text = Convert.ToString(i);
+
+            }
+
+            else if (checkBox2.Checked && i == 1)
+            {
+                var k = karekterler1.Husband.Find(random);
+                listBox5.Items.Add(k.KarekterAdi);
+                listBox5.Items.Add(k.KarekterRank);
+                listBox5.Items.Add(k.SeriAdi);
+                listBox5.Items.Add(k.A2text);
+                pictureBox5.ImageLocation = k.ResimYolu;
+                i--;
+                textBox5.Text = Convert.ToString(i);
+
+            }
+            else if (checkBox1.Checked && i < 1)
+            {
+                MessageBox.Show("Roll Hakkınız Bitti");
+            }
+
+
+
+
+
+
+
 
 
 
