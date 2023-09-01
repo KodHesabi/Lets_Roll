@@ -27,7 +27,7 @@ namespace Lets_Roll
         private void button2_Click(object sender, EventArgs e)
         {
             OpenFileDialog dosya = new OpenFileDialog();
-            dosya.Filter = "Resim Dosyası |*.jpg;*.nef;*.png;*.gif  |  Tüm Dosyalar |*.*";
+            dosya.Filter = "Resim Dosyası |*.jpg;*.nef;*.png;*.gif;  |  Tüm Dosyalar |*.*";
             dosya.ShowDialog();
             string dosyayolu = dosya.FileName;
             textBox5.Text = dosyayolu;
@@ -77,6 +77,12 @@ namespace Lets_Roll
                     if (k != 0)
                     {
                         MessageBox.Show("Başarıyla Kaydedildi", "Uyarı");
+                        textBox1.Text = "";
+                        textBox2.Text = "";
+                        textBox3.Text = "";
+                        textBox4.Text = "";
+                        textBox5.Text = "";
+                        pictureBox1.ImageLocation = "";
                     }
                     else
                     {
@@ -111,6 +117,12 @@ namespace Lets_Roll
                     if (k != 0)
                     {
                         MessageBox.Show("Başarıyla Kaydedildi", "Uyarı");
+                        textBox1.Text = "";
+                        textBox2.Text = "";
+                        textBox3.Text = "";
+                        textBox4.Text = "";
+                        textBox5.Text = "";
+                        pictureBox1.ImageLocation = "";
                     }
 
                 }catch(Exception err)
@@ -140,14 +152,16 @@ namespace Lets_Roll
                 if (k != 0)
                 {
                     MessageBox.Show("Başarıyla Kaydedildi", "Uyarı");
+                    textBox1.Text = "";
+                    textBox2.Text = "";
+                    textBox3.Text = "";
+                    textBox4.Text = "";
+                    textBox5.Text = "";
+                    pictureBox1.ImageLocation = "";
                 }
             }
 
-            textBox1.Text = "";
-            textBox2.Text = "";
-            textBox3.Text = "";
-            textBox4.Text = "";
-            textBox5.Text = "";
+    
 
         }
 

@@ -22,17 +22,25 @@ namespace Lets_Roll
         int ıd;
         private void button4_Click(object sender, EventArgs e)
         {
-            ıd = Convert.ToInt32(textBox5.Text);
-            var k= karaktergetir.Waifu.Find(ıd);
+            if(textBox5.Text=="")
+            {
+                MessageBox.Show("lütfen Database Id kutucugunu doldurun");
+            }
+            else
+            {
+                ıd = Convert.ToInt32(textBox5.Text);
+                var k = karaktergetir.Waifu.Find(ıd);
 
-            textBox1.Text = k.KarekterAdi;
-            textBox2.Text = Convert.ToString(k.KarekterRank);
-            textBox3.Text = k.SeriAdi;
-            textBox4.Text = k.A2text;
-            textBox6.Text = k.ResimYolu;
-            pictureBox1.ImageLocation = k.ResimYolu;
+                textBox1.Text = k.KarekterAdi;
+                textBox2.Text = Convert.ToString(k.KarekterRank);
+                textBox3.Text = k.SeriAdi;
+                textBox4.Text = k.A2text;
+                textBox6.Text = k.ResimYolu;
+                pictureBox1.ImageLocation = k.ResimYolu;
 
-            MessageBox.Show("Başarı ile getirildi");
+                MessageBox.Show("Başarı ile getirildi");
+            }
+            
 
         }
 
