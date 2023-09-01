@@ -40,6 +40,7 @@ namespace Lets_Roll
         {
             Random a = new Random();
             int random = a.Next(1,29);
+            
 
 
             if (checkBox1.Checked == false && checkBox2.Checked == false && checkBox3.Checked == false)
@@ -228,13 +229,13 @@ namespace Lets_Roll
                 {
                     // Karekteri al dedikten sonra listbox ve picturboxların içini sıfırlıyoruz.
                     textBox3.Text = listBox1.Items[listIndex1].ToString();
-                    listBox1.Items.Clear();
+                    
                     listBox2.Items.Clear();
                     listBox3.Items.Clear();
                     listBox4.Items.Clear();
                     listBox5.Items.Clear();
 
-                    pictureBox1.ImageLocation = "";
+                   
                     pictureBox2.ImageLocation = "";
                     pictureBox3.ImageLocation = "";
                     pictureBox4.ImageLocation = "";
@@ -246,13 +247,13 @@ namespace Lets_Roll
                 {
                     textBox3.Text = listBox2.Items[listIndex2].ToString();
                     listBox1.Items.Clear();
-                    listBox2.Items.Clear();
+                   
                     listBox3.Items.Clear();
                     listBox4.Items.Clear();
                     listBox5.Items.Clear();
 
                     pictureBox1.ImageLocation = "";
-                    pictureBox2.ImageLocation = "";
+                  
                     pictureBox3.ImageLocation = "";
                     pictureBox4.ImageLocation = "";
                     pictureBox5.ImageLocation = "";
@@ -264,13 +265,13 @@ namespace Lets_Roll
                     textBox3.Text = listBox3.Items[listIndex3].ToString();
                     listBox1.Items.Clear();
                     listBox2.Items.Clear();
-                    listBox3.Items.Clear();
+                  
                     listBox4.Items.Clear();
                     listBox5.Items.Clear();
 
                     pictureBox1.ImageLocation = "";
                     pictureBox2.ImageLocation = "";
-                    pictureBox3.ImageLocation = "";
+                    
                     pictureBox4.ImageLocation = "";
                     pictureBox5.ImageLocation = "";
 
@@ -282,13 +283,13 @@ namespace Lets_Roll
                     listBox1.Items.Clear();
                     listBox2.Items.Clear();
                     listBox3.Items.Clear();
-                    listBox4.Items.Clear();
+                   
                     listBox5.Items.Clear();
 
                     pictureBox1.ImageLocation = "";
                     pictureBox2.ImageLocation = "";
                     pictureBox3.ImageLocation = "";
-                    pictureBox4.ImageLocation = "";
+                   
                     pictureBox5.ImageLocation = "";
 
                 }
@@ -300,13 +301,13 @@ namespace Lets_Roll
                     listBox2.Items.Clear();
                     listBox3.Items.Clear();
                     listBox4.Items.Clear();
-                    listBox5.Items.Clear();
+                    
 
                     pictureBox1.ImageLocation = "";
                     pictureBox2.ImageLocation = "";
                     pictureBox3.ImageLocation = "";
                     pictureBox4.ImageLocation = "";
-                    pictureBox5.ImageLocation = "";
+                   
 
                 }
 
@@ -317,14 +318,6 @@ namespace Lets_Roll
             }
 
             textBox4.Text = "Sukuna?";
-
-            
-
-            
-
-
-
-
         }
 
         private void RollAnaSayfa_Load(object sender, EventArgs e)

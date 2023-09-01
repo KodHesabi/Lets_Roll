@@ -41,7 +41,7 @@ namespace Lets_Roll
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.button1.Location = new System.Drawing.Point(440, 373);
+            this.button1.Location = new System.Drawing.Point(453, 360);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(127, 39);
             this.button1.TabIndex = 0;
