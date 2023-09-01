@@ -33,6 +33,7 @@ namespace Lets_Roll
             return Convert.ToString( MessageBox.Show("Seçim Yapınız"));
         }
 
+
         int i = 5;
         KarekterlerContext karekterler1 = new KarekterlerContext();
         private void RollButonu_Click(object sender, EventArgs e)
@@ -47,166 +48,163 @@ namespace Lets_Roll
 
             }
 
-            if (checkBox1.Checked && i == 5)
+            else if (checkBox1.Checked == true && checkBox2.Checked == true && checkBox3.Checked == false && i>1 
+            || checkBox1.Checked == true && checkBox2.Checked == false && checkBox3.Checked == true && i>1
+            || checkBox1.Checked == false && checkBox2.Checked == true && checkBox3.Checked == true && i>1
+            || checkBox1.Checked == true && checkBox2.Checked == true && checkBox3.Checked == true  && i>1)
             {
-                var k = karekterler1.Waifu.Find(random);
-                listBox1.Items.Add(k.KarekterAdi);
-                listBox1.Items.Add(k.KarekterRank);
-                listBox1.Items.Add(k.SeriAdi);
-                listBox1.Items.Add(k.A2text);
-                pictureBox1.ImageLocation = k.ResimYolu;
-                i--;
-                textBox5.Text = Convert.ToString(i);
-
+                MessageBox.Show("Lütfen roll atmak için tek bir tür seçiniz...!");
 
             }
 
-
-            else if (checkBox1.Checked && i == 4)
+            else
             {
-                var k = karekterler1.Waifu.Find(random);
-                listBox2.Items.Add(k.KarekterAdi);
-                listBox2.Items.Add(k.KarekterRank);
-                listBox2.Items.Add(k.SeriAdi);
-                listBox2.Items.Add(k.A2text);
-                pictureBox2.ImageLocation = k.ResimYolu;
-                i--;
-                textBox5.Text = Convert.ToString(i);
+
+                if (checkBox1.Checked && i == 5)
+                {
+                    var k = karekterler1.Waifu.Find(random);
+                    listBox1.Items.Add(k.KarekterAdi);
+                    listBox1.Items.Add(k.KarekterRank);
+                    listBox1.Items.Add(k.SeriAdi);
+                    listBox1.Items.Add(k.A2text);
+                    pictureBox1.ImageLocation = k.ResimYolu;
+                    i--;
+                    textBox5.Text = Convert.ToString(i);
+
+
+                }
+
+
+                else if (checkBox1.Checked && i == 4)
+                {
+                    var k = karekterler1.Waifu.Find(random);
+                    listBox2.Items.Add(k.KarekterAdi);
+                    listBox2.Items.Add(k.KarekterRank);
+                    listBox2.Items.Add(k.SeriAdi);
+                    listBox2.Items.Add(k.A2text);
+                    pictureBox2.ImageLocation = k.ResimYolu;
+                    i--;
+                    textBox5.Text = Convert.ToString(i);
+
+                }
+
+                else if (checkBox1.Checked && i == 3)
+                {
+                    var k = karekterler1.Waifu.Find(random);
+                    listBox3.Items.Add(k.KarekterAdi);
+                    listBox3.Items.Add(k.KarekterRank);
+                    listBox3.Items.Add(k.SeriAdi);
+                    listBox3.Items.Add(k.A2text);
+                    pictureBox3.ImageLocation = k.ResimYolu;
+                    i--;
+                    textBox5.Text = Convert.ToString(i);
+
+                }
+
+                else if (checkBox1.Checked && i == 2)
+                {
+                    var k = karekterler1.Waifu.Find(random);
+                    listBox4.Items.Add(k.KarekterAdi);
+                    listBox4.Items.Add(k.KarekterRank);
+                    listBox4.Items.Add(k.SeriAdi);
+                    listBox4.Items.Add(k.A2text);
+                    pictureBox4.ImageLocation = k.ResimYolu;
+                    i--;
+                    textBox5.Text = Convert.ToString(i);
+
+                }
+
+                else if (checkBox1.Checked && i == 1)
+                {
+                    var k = karekterler1.Waifu.Find(random);
+                    listBox5.Items.Add(k.KarekterAdi);
+                    listBox5.Items.Add(k.KarekterRank);
+                    listBox5.Items.Add(k.SeriAdi);
+                    listBox5.Items.Add(k.A2text);
+                    pictureBox5.ImageLocation = k.ResimYolu;
+                    i--;
+                    textBox5.Text = Convert.ToString(i);
+
+                }
+
+
+
+                // Checkboxx 2 için roll seçimi
+
+
+                if (checkBox2.Checked && i == 5)
+                {
+                    var k = karekterler1.Husband.Find(random);
+                    listBox1.Items.Add(k.KarekterAdi);
+                    listBox1.Items.Add(k.KarekterRank);
+                    listBox1.Items.Add(k.SeriAdi);
+                    listBox1.Items.Add(k.A2text);
+                    pictureBox1.ImageLocation = k.ResimYolu;
+                    i--;
+                    textBox5.Text = Convert.ToString(i);
+
+
+                }
+
+
+                else if (checkBox2.Checked && i == 4)
+                {
+                    var k = karekterler1.Husband.Find(random);
+                    listBox2.Items.Add(k.KarekterAdi);
+                    listBox2.Items.Add(k.KarekterRank);
+                    listBox2.Items.Add(k.SeriAdi);
+                    listBox2.Items.Add(k.A2text);
+                    pictureBox2.ImageLocation = k.ResimYolu;
+                    i--;
+                    textBox5.Text = Convert.ToString(i);
+
+                }
+
+                else if (checkBox2.Checked && i == 3)
+                {
+                    var k = karekterler1.Husband.Find(random);
+                    listBox3.Items.Add(k.KarekterAdi);
+                    listBox3.Items.Add(k.KarekterRank);
+                    listBox3.Items.Add(k.SeriAdi);
+                    listBox3.Items.Add(k.A2text);
+                    pictureBox3.ImageLocation = k.ResimYolu;
+                    i--;
+                    textBox5.Text = Convert.ToString(i);
+
+                }
+
+                else if (checkBox2.Checked && i == 2)
+                {
+                    var k = karekterler1.Husband.Find(random);
+                    listBox4.Items.Add(k.KarekterAdi);
+                    listBox4.Items.Add(k.KarekterRank);
+                    listBox4.Items.Add(k.SeriAdi);
+                    listBox4.Items.Add(k.A2text);
+                    pictureBox4.ImageLocation = k.ResimYolu;
+                    i--;
+                    textBox5.Text = Convert.ToString(i);
+
+                }
+
+                else if (checkBox2.Checked && i == 1)
+                {
+                    var k = karekterler1.Husband.Find(random);
+                    listBox5.Items.Add(k.KarekterAdi);
+                    listBox5.Items.Add(k.KarekterRank);
+                    listBox5.Items.Add(k.SeriAdi);
+                    listBox5.Items.Add(k.A2text);
+                    pictureBox5.ImageLocation = k.ResimYolu;
+                    i--;
+                    textBox5.Text = Convert.ToString(i);
+
+                }
+
+                else if (checkBox1.Checked && i == 0 || checkBox2.Checked && i == 0 || checkBox3.Checked && i == 0)
+                {
+                    MessageBox.Show("Roll Hakkınız Bitti");
+                }
 
             }
-
-            else if (checkBox1.Checked && i == 3)
-            {
-                var k = karekterler1.Waifu.Find(random);
-                listBox3.Items.Add(k.KarekterAdi);
-                listBox3.Items.Add(k.KarekterRank);
-                listBox3.Items.Add(k.SeriAdi);
-                listBox3.Items.Add(k.A2text);
-                pictureBox3.ImageLocation = k.ResimYolu;
-                i--;
-                textBox5.Text = Convert.ToString(i);
-
-            }
-
-            else if (checkBox1.Checked && i == 2)
-            {
-                var k = karekterler1.Waifu.Find(random);
-                listBox4.Items.Add(k.KarekterAdi);
-                listBox4.Items.Add(k.KarekterRank);
-                listBox4.Items.Add(k.SeriAdi);
-                listBox4.Items.Add(k.A2text);
-                pictureBox4.ImageLocation = k.ResimYolu;
-                i--;
-                textBox5.Text = Convert.ToString(i);
-
-            }
-
-            else if (checkBox1.Checked && i == 1)
-            {
-                var k = karekterler1.Waifu.Find(random);
-                listBox5.Items.Add(k.KarekterAdi);
-                listBox5.Items.Add(k.KarekterRank);
-                listBox5.Items.Add(k.SeriAdi);
-                listBox5.Items.Add(k.A2text);
-                pictureBox5.ImageLocation = k.ResimYolu;
-                i--;
-                textBox5.Text = Convert.ToString(i);
-
-            }
-            else if(checkBox1.Checked && i == 0)
-            {
-                MessageBox.Show("Roll Hakkınız Bitti");
-               
-            }
-
-
-
-
-            // Checkboxx 2 için roll seçimi
-   
-
-            if (checkBox2.Checked && i == 5)
-            {
-                var k = karekterler1.Husband.Find(random);
-                listBox1.Items.Add(k.KarekterAdi);
-                listBox1.Items.Add(k.KarekterRank);
-                listBox1.Items.Add(k.SeriAdi);
-                listBox1.Items.Add(k.A2text);
-                pictureBox1.ImageLocation = k.ResimYolu;
-                i--;
-                textBox5.Text = Convert.ToString(i);
-
-
-            }
-
-
-            else if (checkBox2.Checked && i == 4)
-            {
-                var k = karekterler1.Husband.Find(random);
-                listBox2.Items.Add(k.KarekterAdi);
-                listBox2.Items.Add(k.KarekterRank);
-                listBox2.Items.Add(k.SeriAdi);
-                listBox2.Items.Add(k.A2text);
-                pictureBox2.ImageLocation = k.ResimYolu;
-                i--;
-                textBox5.Text = Convert.ToString(i);
-
-            }
-
-            else if (checkBox2.Checked && i == 3)
-            {
-                var k = karekterler1.Husband.Find(random);
-                listBox3.Items.Add(k.KarekterAdi);
-                listBox3.Items.Add(k.KarekterRank);
-                listBox3.Items.Add(k.SeriAdi);
-                listBox3.Items.Add(k.A2text);
-                pictureBox3.ImageLocation = k.ResimYolu;
-                i--;
-                textBox5.Text = Convert.ToString(i);
-
-            }
-
-            else if (checkBox2.Checked && i == 2)
-            {
-                var k = karekterler1.Husband.Find(random);
-                listBox4.Items.Add(k.KarekterAdi);
-                listBox4.Items.Add(k.KarekterRank);
-                listBox4.Items.Add(k.SeriAdi);
-                listBox4.Items.Add(k.A2text);
-                pictureBox4.ImageLocation = k.ResimYolu;
-                i--;
-                textBox5.Text = Convert.ToString(i);
-
-            }
-
-            else if (checkBox2.Checked && i == 1)
-            {
-                var k = karekterler1.Husband.Find(random);
-                listBox5.Items.Add(k.KarekterAdi);
-                listBox5.Items.Add(k.KarekterRank);
-                listBox5.Items.Add(k.SeriAdi);
-                listBox5.Items.Add(k.A2text);
-                pictureBox5.ImageLocation = k.ResimYolu;
-                i--;
-                textBox5.Text = Convert.ToString(i);
-
-            }
-            else if (checkBox1.Checked && i == 0)
-            {
-                MessageBox.Show("Roll Hakkınız Bitti");
-            }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         }
@@ -317,6 +315,8 @@ namespace Lets_Roll
             {
                 MessageBox.Show("Claim hakkınıza kalan süre..");
             }
+
+            textBox4.Text = "Sukuna?";
 
             
 
