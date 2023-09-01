@@ -38,7 +38,7 @@ namespace Lets_Roll
         private void RollButonu_Click(object sender, EventArgs e)
         {
             Random a = new Random();
-            int random = a.Next(4,5);
+            int random = a.Next(1,29);
 
 
             if (checkBox1.Checked == false && checkBox2.Checked == false && checkBox3.Checked == false)
@@ -113,9 +113,10 @@ namespace Lets_Roll
                 textBox5.Text = Convert.ToString(i);
 
             }
-            else if(checkBox1.Checked && i < 1)
+            else if(checkBox1.Checked && i == 0)
             {
                 MessageBox.Show("Roll Hakkınız Bitti");
+               
             }
 
 
@@ -190,7 +191,7 @@ namespace Lets_Roll
                 textBox5.Text = Convert.ToString(i);
 
             }
-            else if (checkBox1.Checked && i < 1)
+            else if (checkBox1.Checked && i == 0)
             {
                 MessageBox.Show("Roll Hakkınız Bitti");
             }
@@ -217,98 +218,107 @@ namespace Lets_Roll
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
-            int listIndex1 = listBox1.SelectedIndex;
-            int listIndex2 = listBox2.SelectedIndex;
-            int listIndex3 = listBox3.SelectedIndex;
-            int listIndex4 = listBox4.SelectedIndex;
-            int listIndex5 = listBox5.SelectedIndex;
-          
-            if (listBox1.SelectedIndex != -1)
+            if (textBox3.Text == "")
             {
-                // Karekteri al dedikten sonra listbox ve picturboxların içini sıfırlıyoruz.
-                textBox3.Text = listBox1.Items[listIndex1].ToString();
-                listBox1.Items.Clear();
-                listBox2.Items.Clear();
-                listBox3.Items.Clear();
-                listBox4.Items.Clear();
-                listBox5.Items.Clear();
+                int listIndex1 = listBox1.SelectedIndex;
+                int listIndex2 = listBox2.SelectedIndex;
+                int listIndex3 = listBox3.SelectedIndex;
+                int listIndex4 = listBox4.SelectedIndex;
+                int listIndex5 = listBox5.SelectedIndex;
 
-                pictureBox1.ImageLocation = "";
-                pictureBox2.ImageLocation = "";
-                pictureBox3.ImageLocation = "";
-                pictureBox4.ImageLocation = "";
-                pictureBox5.ImageLocation = "";
+                if (listBox1.SelectedIndex != -1)
+                {
+                    // Karekteri al dedikten sonra listbox ve picturboxların içini sıfırlıyoruz.
+                    textBox3.Text = listBox1.Items[listIndex1].ToString();
+                    listBox1.Items.Clear();
+                    listBox2.Items.Clear();
+                    listBox3.Items.Clear();
+                    listBox4.Items.Clear();
+                    listBox5.Items.Clear();
+
+                    pictureBox1.ImageLocation = "";
+                    pictureBox2.ImageLocation = "";
+                    pictureBox3.ImageLocation = "";
+                    pictureBox4.ImageLocation = "";
+                    pictureBox5.ImageLocation = "";
+
+                }
+
+                if (listBox2.SelectedIndex != -1)
+                {
+                    textBox3.Text = listBox2.Items[listIndex2].ToString();
+                    listBox1.Items.Clear();
+                    listBox2.Items.Clear();
+                    listBox3.Items.Clear();
+                    listBox4.Items.Clear();
+                    listBox5.Items.Clear();
+
+                    pictureBox1.ImageLocation = "";
+                    pictureBox2.ImageLocation = "";
+                    pictureBox3.ImageLocation = "";
+                    pictureBox4.ImageLocation = "";
+                    pictureBox5.ImageLocation = "";
+
+                }
+
+                if (listBox3.SelectedIndex != -1)
+                {
+                    textBox3.Text = listBox3.Items[listIndex3].ToString();
+                    listBox1.Items.Clear();
+                    listBox2.Items.Clear();
+                    listBox3.Items.Clear();
+                    listBox4.Items.Clear();
+                    listBox5.Items.Clear();
+
+                    pictureBox1.ImageLocation = "";
+                    pictureBox2.ImageLocation = "";
+                    pictureBox3.ImageLocation = "";
+                    pictureBox4.ImageLocation = "";
+                    pictureBox5.ImageLocation = "";
+
+                }
+
+                if (listBox4.SelectedIndex != -1)
+                {
+                    textBox3.Text = listBox4.Items[listIndex4].ToString();
+                    listBox1.Items.Clear();
+                    listBox2.Items.Clear();
+                    listBox3.Items.Clear();
+                    listBox4.Items.Clear();
+                    listBox5.Items.Clear();
+
+                    pictureBox1.ImageLocation = "";
+                    pictureBox2.ImageLocation = "";
+                    pictureBox3.ImageLocation = "";
+                    pictureBox4.ImageLocation = "";
+                    pictureBox5.ImageLocation = "";
+
+                }
+
+                if (listBox5.SelectedIndex != -1)
+                {
+                    textBox3.Text = listBox5.Items[listIndex5].ToString();
+                    listBox1.Items.Clear();
+                    listBox2.Items.Clear();
+                    listBox3.Items.Clear();
+                    listBox4.Items.Clear();
+                    listBox5.Items.Clear();
+
+                    pictureBox1.ImageLocation = "";
+                    pictureBox2.ImageLocation = "";
+                    pictureBox3.ImageLocation = "";
+                    pictureBox4.ImageLocation = "";
+                    pictureBox5.ImageLocation = "";
+
+                }
 
             }
-
-            if (listBox2.SelectedIndex != -1)
+            else
             {
-                textBox3.Text = listBox2.Items[listIndex2].ToString();
-                listBox1.Items.Clear();
-                listBox2.Items.Clear();
-                listBox3.Items.Clear();
-                listBox4.Items.Clear();
-                listBox5.Items.Clear();
-
-                pictureBox1.ImageLocation = "";
-                pictureBox2.ImageLocation = "";
-                pictureBox3.ImageLocation = "";
-                pictureBox4.ImageLocation = "";
-                pictureBox5.ImageLocation = "";
-
+                MessageBox.Show("Claim hakkınıza kalan süre..");
             }
 
-            if (listBox3.SelectedIndex != -1 )
-            {
-                textBox3.Text = listBox3.Items[listIndex3].ToString();
-                listBox1.Items.Clear();
-                listBox2.Items.Clear();
-                listBox3.Items.Clear();
-                listBox4.Items.Clear();
-                listBox5.Items.Clear();
-
-                pictureBox1.ImageLocation = "";
-                pictureBox2.ImageLocation = "";
-                pictureBox3.ImageLocation = "";
-                pictureBox4.ImageLocation = "";
-                pictureBox5.ImageLocation = "";
-
-            }
-
-            if (listBox4.SelectedIndex != -1 )
-            {
-                textBox3.Text = listBox4.Items[listIndex4].ToString();
-                listBox1.Items.Clear();
-                listBox2.Items.Clear();
-                listBox3.Items.Clear();
-                listBox4.Items.Clear();
-                listBox5.Items.Clear();
-
-                pictureBox1.ImageLocation = "";
-                pictureBox2.ImageLocation = "";
-                pictureBox3.ImageLocation = "";
-                pictureBox4.ImageLocation = "";
-                pictureBox5.ImageLocation = "";
-
-            }
-
-            if (listBox5.SelectedIndex != -1)
-            {
-                textBox3.Text = listBox5.Items[listIndex5].ToString();
-                listBox1.Items.Clear();
-                listBox2.Items.Clear();
-                listBox3.Items.Clear();
-                listBox4.Items.Clear();
-                listBox5.Items.Clear();
-
-                pictureBox1.ImageLocation = "";
-                pictureBox2.ImageLocation = "";
-                pictureBox3.ImageLocation = "";
-                pictureBox4.ImageLocation = "";
-                pictureBox5.ImageLocation = "";
-
-            }
+            
 
             
 

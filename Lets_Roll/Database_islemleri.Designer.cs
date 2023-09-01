@@ -94,7 +94,7 @@ namespace Lets_Roll
             this.textBox1.Location = new System.Drawing.Point(306, 108);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(153, 28);
+            this.textBox1.Size = new System.Drawing.Size(233, 28);
             this.textBox1.TabIndex = 4;
             // 
             // textBox2
@@ -112,7 +112,7 @@ namespace Lets_Roll
             this.textBox3.Location = new System.Drawing.Point(306, 252);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(153, 28);
+            this.textBox3.Size = new System.Drawing.Size(287, 28);
             this.textBox3.TabIndex = 6;
             // 
             // textBox4
@@ -121,7 +121,7 @@ namespace Lets_Roll
             this.textBox4.Location = new System.Drawing.Point(306, 320);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(153, 28);
+            this.textBox4.Size = new System.Drawing.Size(287, 28);
             this.textBox4.TabIndex = 7;
             // 
             // button1
@@ -229,6 +229,7 @@ namespace Lets_Roll
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Database_islemleri";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Database_islemleri";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

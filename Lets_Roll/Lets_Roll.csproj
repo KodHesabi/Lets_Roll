@@ -82,6 +82,12 @@
     </Compile>
     <Compile Include="Husband.cs" />
     <Compile Include="KarekterlerContext.cs" />
+    <Compile Include="Kullanıcı_Giris_Sayfası.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanıcı_Giris_Sayfası.Designer.cs">
+      <DependentUpon>Kullanıcı_Giris_Sayfası.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MixTablosu.cs" />
     <Compile Include="RollAnaSayfa.cs">
@@ -99,6 +105,12 @@
     <Compile Include="YetkiliAnasayfa.Designer.cs">
       <DependentUpon>YetkiliAnasayfa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Yetkili_Giris_Sayfası.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yetkili_Giris_Sayfası.Designer.cs">
+      <DependentUpon>Yetkili_Giris_Sayfası.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Database_islemleri.resx">
       <DependentUpon>Database_islemleri.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Harem_İşlemleri.resx">
       <DependentUpon>Harem_İşlemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanıcı_Giris_Sayfası.resx">
+      <DependentUpon>Kullanıcı_Giris_Sayfası.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -125,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="YetkiliAnasayfa.resx">
       <DependentUpon>YetkiliAnasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yetkili_Giris_Sayfası.resx">
+      <DependentUpon>Yetkili_Giris_Sayfası.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
