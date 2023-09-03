@@ -38,6 +38,7 @@ namespace Lets_Roll
         KarekterlerContext karekterler1 = new KarekterlerContext();
         private void RollButonu_Click(object sender, EventArgs e)
         {
+            timer1.Enabled = true;
             Random a = new Random();
             int random = a.Next(1,29);
             
@@ -217,111 +218,193 @@ namespace Lets_Roll
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox3.Text == "")
+            if(textBox6.Text=="0")
             {
-                int listIndex1 = listBox1.SelectedIndex;
-                int listIndex2 = listBox2.SelectedIndex;
-                int listIndex3 = listBox3.SelectedIndex;
-                int listIndex4 = listBox4.SelectedIndex;
-                int listIndex5 = listBox5.SelectedIndex;
-
-                if (listBox1.SelectedIndex != -1)
-                {
-                    // Karekteri al dedikten sonra listbox ve picturboxların içini sıfırlıyoruz.
-                    textBox3.Text = listBox1.Items[listIndex1].ToString();
-                    
-                    listBox2.Items.Clear();
-                    listBox3.Items.Clear();
-                    listBox4.Items.Clear();
-                    listBox5.Items.Clear();
-
-                   
-                    pictureBox2.ImageLocation = "";
-                    pictureBox3.ImageLocation = "";
-                    pictureBox4.ImageLocation = "";
-                    pictureBox5.ImageLocation = "";
-
-                }
-
-                if (listBox2.SelectedIndex != -1)
-                {
-                    textBox3.Text = listBox2.Items[listIndex2].ToString();
-                    listBox1.Items.Clear();
-                   
-                    listBox3.Items.Clear();
-                    listBox4.Items.Clear();
-                    listBox5.Items.Clear();
-
-                    pictureBox1.ImageLocation = "";
-                  
-                    pictureBox3.ImageLocation = "";
-                    pictureBox4.ImageLocation = "";
-                    pictureBox5.ImageLocation = "";
-
-                }
-
-                if (listBox3.SelectedIndex != -1)
-                {
-                    textBox3.Text = listBox3.Items[listIndex3].ToString();
-                    listBox1.Items.Clear();
-                    listBox2.Items.Clear();
-                  
-                    listBox4.Items.Clear();
-                    listBox5.Items.Clear();
-
-                    pictureBox1.ImageLocation = "";
-                    pictureBox2.ImageLocation = "";
-                    
-                    pictureBox4.ImageLocation = "";
-                    pictureBox5.ImageLocation = "";
-
-                }
-
-                if (listBox4.SelectedIndex != -1)
-                {
-                    textBox3.Text = listBox4.Items[listIndex4].ToString();
-                    listBox1.Items.Clear();
-                    listBox2.Items.Clear();
-                    listBox3.Items.Clear();
-                   
-                    listBox5.Items.Clear();
-
-                    pictureBox1.ImageLocation = "";
-                    pictureBox2.ImageLocation = "";
-                    pictureBox3.ImageLocation = "";
-                   
-                    pictureBox5.ImageLocation = "";
-
-                }
-
-                if (listBox5.SelectedIndex != -1)
-                {
-                    textBox3.Text = listBox5.Items[listIndex5].ToString();
-                    listBox1.Items.Clear();
-                    listBox2.Items.Clear();
-                    listBox3.Items.Clear();
-                    listBox4.Items.Clear();
-                    
-
-                    pictureBox1.ImageLocation = "";
-                    pictureBox2.ImageLocation = "";
-                    pictureBox3.ImageLocation = "";
-                    pictureBox4.ImageLocation = "";
-                   
-
-                }
-
+                MessageBox.Show("Geçti Borun pazarı Sür eşeği niğdeye, Zaman Doldu");
             }
             else
             {
-                MessageBox.Show("Claim hakkınıza kalan süre..");
-            }
+                if (textBox3.Text == "")
+                {
+                    int listIndex1 = listBox1.SelectedIndex;
+                    int listIndex2 = listBox2.SelectedIndex;
+                    int listIndex3 = listBox3.SelectedIndex;
+                    int listIndex4 = listBox4.SelectedIndex;
+                    int listIndex5 = listBox5.SelectedIndex;
 
-            textBox4.Text = "Sukuna?";
+                    if (listBox1.SelectedIndex != -1)
+                    {
+                        // Karekteri al dedikten sonra listbox ve picturboxların içini sıfırlıyoruz.
+                        textBox3.Text = listBox1.Items[listIndex1].ToString();
+                        textBox4.Text = "Sukuna?";
+
+                        listBox2.Items.Clear();
+                        listBox3.Items.Clear();
+                        listBox4.Items.Clear();
+                        listBox5.Items.Clear();
+
+
+                        pictureBox2.ImageLocation = "";
+                        pictureBox3.ImageLocation = "";
+                        pictureBox4.ImageLocation = "";
+                        pictureBox5.ImageLocation = "";
+
+                    }
+
+                    if (listBox2.SelectedIndex != -1)
+                    {
+                        textBox3.Text = listBox2.Items[listIndex2].ToString();
+                        textBox4.Text = "Sukuna?";
+                        listBox1.Items.Clear();
+
+                        listBox3.Items.Clear();
+                        listBox4.Items.Clear();
+                        listBox5.Items.Clear();
+
+                        pictureBox1.ImageLocation = "";
+
+                        pictureBox3.ImageLocation = "";
+                        pictureBox4.ImageLocation = "";
+                        pictureBox5.ImageLocation = "";
+
+                    }
+
+                    if (listBox3.SelectedIndex != -1)
+                    {
+                        textBox3.Text = listBox3.Items[listIndex3].ToString();
+                        textBox4.Text = "Sukuna?";
+                        listBox1.Items.Clear();
+                        listBox2.Items.Clear();
+
+                        listBox4.Items.Clear();
+                        listBox5.Items.Clear();
+
+                        pictureBox1.ImageLocation = "";
+                        pictureBox2.ImageLocation = "";
+
+                        pictureBox4.ImageLocation = "";
+                        pictureBox5.ImageLocation = "";
+
+                    }
+
+                    if (listBox4.SelectedIndex != -1)
+                    {
+                        textBox3.Text = listBox4.Items[listIndex4].ToString();
+                        textBox4.Text = "Sukuna?";
+                        listBox1.Items.Clear();
+                        listBox2.Items.Clear();
+                        listBox3.Items.Clear();
+
+                        listBox5.Items.Clear();
+
+                        pictureBox1.ImageLocation = "";
+                        pictureBox2.ImageLocation = "";
+                        pictureBox3.ImageLocation = "";
+
+                        pictureBox5.ImageLocation = "";
+
+                    }
+
+                    if (listBox5.SelectedIndex != -1)
+                    {
+                        textBox3.Text = listBox5.Items[listIndex5].ToString();
+                        textBox4.Text = "Sukuna?";
+                        listBox1.Items.Clear();
+                        listBox2.Items.Clear();
+                        listBox3.Items.Clear();
+                        listBox4.Items.Clear();
+
+
+                        pictureBox1.ImageLocation = "";
+                        pictureBox2.ImageLocation = "";
+                        pictureBox3.ImageLocation = "";
+                        pictureBox4.ImageLocation = "";
+
+
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Claim hakkınıza kalan süre..");
+                }
+
+            }
+            
+
+            
         }
 
         private void RollAnaSayfa_Load(object sender, EventArgs e)
         {
+
+        }
+        int sayac = 20;
+        int sayac2 = 10;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+           
+            textBox6.Text = Convert.ToString(sayac2);
+            if (i != 5 && sayac2 !=0)
+            {
+                sayac2--;
+            }
+            /*
+
+           else if (i == 0 && sayac2 == 0)
+            {
+                textBox6.Text = "0";
+                
+               
+            }
+            */
+           
+         
+           
+            if (checkBox1.Checked == false && checkBox2.Checked == false && checkBox3.Checked == false)
+            {
+                timer1.Enabled = false;
+
+            }
+
+            else if (checkBox1.Checked == true && checkBox2.Checked == true && checkBox3.Checked == false && i > 1
+            || checkBox1.Checked == true && checkBox2.Checked == false && checkBox3.Checked == true && i > 1
+            || checkBox1.Checked == false && checkBox2.Checked == true && checkBox3.Checked == true && i > 1
+            || checkBox1.Checked == true && checkBox2.Checked == true && checkBox3.Checked == true && i > 1)
+            {
+                timer1.Enabled = false;
+            }
+
+
+            else
+            {
+                textBox2.Text = Convert.ToString(sayac);
+                sayac--;
+
+                if (sayac == 0)
+                {
+                    sayac = 20;
+                    textBox5.Text = " 5";
+                    i = 5;
+                    textBox6.Text = "10";
+                    sayac2 = 10;
+                    listBox1.Items.Clear();
+                    listBox2.Items.Clear();
+                    listBox3.Items.Clear();
+                    listBox4.Items.Clear();
+                    listBox5.Items.Clear();
+                    textBox3.Text = "";
+                    textBox4.Text = "";
+                    pictureBox1.ImageLocation = "";
+                    pictureBox2.ImageLocation = "";
+                    pictureBox3.ImageLocation = "";
+                    pictureBox4.ImageLocation = "";
+                    pictureBox5.ImageLocation = "";
+                   
+                }
+
+            }
+            
 
         }
     }

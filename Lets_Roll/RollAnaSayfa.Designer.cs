@@ -29,6 +29,7 @@ namespace Lets_Roll
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -54,6 +55,11 @@ namespace Lets_Roll
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -138,7 +144,7 @@ namespace Lets_Roll
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Salmon;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(249, 110);
+            this.label2.Location = new System.Drawing.Point(246, 89);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(181, 20);
             this.label2.TabIndex = 4;
@@ -146,11 +152,12 @@ namespace Lets_Roll
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(455, 105);
+            this.textBox2.Location = new System.Drawing.Point(452, 84);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(114, 30);
             this.textBox2.TabIndex = 5;
+            this.textBox2.Text = "20";
             // 
             // listBox1
             // 
@@ -313,6 +320,52 @@ namespace Lets_Roll
             this.textBox5.TabIndex = 18;
             this.textBox5.Text = "5";
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox1.Location = new System.Drawing.Point(453, 136);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(116, 29);
+            this.textBox1.TabIndex = 20;
+            this.textBox1.Text = "1";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Salmon;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(288, 144);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(109, 20);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "Claim Hakkı :";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Coral;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(593, 613);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(250, 20);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "Karekteri Almak için kalan süre :";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox6.Location = new System.Drawing.Point(884, 609);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 27);
+            this.textBox6.TabIndex = 22;
+            this.textBox6.Text = "10";
+            // 
             // RollAnaSayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -320,6 +373,10 @@ namespace Lets_Roll
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.SystemColors.MenuBar;
             this.ClientSize = new System.Drawing.Size(1435, 667);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
@@ -383,5 +440,10 @@ namespace Lets_Roll
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox6;
     }
 }
