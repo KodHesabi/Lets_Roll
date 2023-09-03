@@ -88,6 +88,12 @@
     <Compile Include="Kullanıcı_Giris_Sayfası.Designer.cs">
       <DependentUpon>Kullanıcı_Giris_Sayfası.cs</DependentUpon>
     </Compile>
+    <Compile Include="Kullanıcı_Kaydol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanıcı_Kaydol.Designer.cs">
+      <DependentUpon>Kullanıcı_Kaydol.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MixTablosu.cs" />
     <Compile Include="RollAnaSayfa.cs">
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Kullanıcı_Giris_Sayfası.resx">
       <DependentUpon>Kullanıcı_Giris_Sayfası.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanıcı_Kaydol.resx">
+      <DependentUpon>Kullanıcı_Kaydol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
