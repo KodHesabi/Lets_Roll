@@ -60,6 +60,9 @@ namespace Lets_Roll
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -120,7 +123,7 @@ namespace Lets_Roll
             // 
             this.RollButonu.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.RollButonu.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RollButonu.Location = new System.Drawing.Point(420, 183);
+            this.RollButonu.Location = new System.Drawing.Point(420, 230);
             this.RollButonu.Name = "RollButonu";
             this.RollButonu.Size = new System.Drawing.Size(124, 34);
             this.RollButonu.TabIndex = 1;
@@ -133,7 +136,7 @@ namespace Lets_Roll
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Salmon;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(288, 44);
+            this.label1.Location = new System.Drawing.Point(283, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 20);
             this.label1.TabIndex = 3;
@@ -144,7 +147,7 @@ namespace Lets_Roll
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Salmon;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(246, 89);
+            this.label2.Location = new System.Drawing.Point(240, 81);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(181, 20);
             this.label2.TabIndex = 4;
@@ -152,19 +155,19 @@ namespace Lets_Roll
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(452, 84);
+            this.textBox2.Location = new System.Drawing.Point(447, 76);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(114, 30);
             this.textBox2.TabIndex = 5;
-            this.textBox2.Text = "20";
+            this.textBox2.Text = "30";
             // 
             // listBox1
             // 
             this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 18;
-            this.listBox1.Location = new System.Drawing.Point(16, 253);
+            this.listBox1.Location = new System.Drawing.Point(16, 280);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(263, 346);
             this.listBox1.TabIndex = 6;
@@ -174,7 +177,7 @@ namespace Lets_Roll
             this.listBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.listBox2.FormattingEnabled = true;
             this.listBox2.ItemHeight = 18;
-            this.listBox2.Location = new System.Drawing.Point(298, 253);
+            this.listBox2.Location = new System.Drawing.Point(298, 280);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(263, 346);
             this.listBox2.TabIndex = 7;
@@ -184,7 +187,7 @@ namespace Lets_Roll
             this.listBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.listBox3.FormattingEnabled = true;
             this.listBox3.ItemHeight = 18;
-            this.listBox3.Location = new System.Drawing.Point(579, 253);
+            this.listBox3.Location = new System.Drawing.Point(579, 280);
             this.listBox3.Name = "listBox3";
             this.listBox3.Size = new System.Drawing.Size(263, 346);
             this.listBox3.TabIndex = 8;
@@ -194,7 +197,7 @@ namespace Lets_Roll
             this.listBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.listBox4.FormattingEnabled = true;
             this.listBox4.ItemHeight = 18;
-            this.listBox4.Location = new System.Drawing.Point(860, 253);
+            this.listBox4.Location = new System.Drawing.Point(860, 280);
             this.listBox4.Name = "listBox4";
             this.listBox4.Size = new System.Drawing.Size(263, 346);
             this.listBox4.TabIndex = 9;
@@ -204,7 +207,7 @@ namespace Lets_Roll
             this.listBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.listBox5.FormattingEnabled = true;
             this.listBox5.ItemHeight = 18;
-            this.listBox5.Location = new System.Drawing.Point(1141, 253);
+            this.listBox5.Location = new System.Drawing.Point(1141, 280);
             this.listBox5.Name = "listBox5";
             this.listBox5.Size = new System.Drawing.Size(282, 346);
             this.listBox5.TabIndex = 10;
@@ -213,7 +216,7 @@ namespace Lets_Roll
             // 
             this.button1.BackColor = System.Drawing.Color.Yellow;
             this.button1.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(1180, 605);
+            this.button1.Location = new System.Drawing.Point(1180, 632);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(224, 50);
             this.button1.TabIndex = 12;
@@ -272,7 +275,7 @@ namespace Lets_Roll
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(35, 363);
+            this.pictureBox1.Location = new System.Drawing.Point(35, 390);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(229, 227);
             this.pictureBox1.TabIndex = 13;
@@ -280,7 +283,7 @@ namespace Lets_Roll
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(315, 364);
+            this.pictureBox2.Location = new System.Drawing.Point(315, 391);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(229, 225);
             this.pictureBox2.TabIndex = 14;
@@ -288,7 +291,7 @@ namespace Lets_Roll
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(595, 364);
+            this.pictureBox3.Location = new System.Drawing.Point(595, 391);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(234, 225);
             this.pictureBox3.TabIndex = 15;
@@ -296,7 +299,7 @@ namespace Lets_Roll
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(874, 364);
+            this.pictureBox4.Location = new System.Drawing.Point(874, 391);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(235, 225);
             this.pictureBox4.TabIndex = 16;
@@ -304,7 +307,7 @@ namespace Lets_Roll
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(1160, 363);
+            this.pictureBox5.Location = new System.Drawing.Point(1160, 390);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(244, 225);
             this.pictureBox5.TabIndex = 17;
@@ -313,7 +316,7 @@ namespace Lets_Roll
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox5.Location = new System.Drawing.Point(453, 36);
+            this.textBox5.Location = new System.Drawing.Point(448, 28);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(116, 29);
@@ -328,7 +331,7 @@ namespace Lets_Roll
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(453, 136);
+            this.textBox1.Location = new System.Drawing.Point(448, 128);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(116, 29);
@@ -340,7 +343,7 @@ namespace Lets_Roll
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Salmon;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(288, 144);
+            this.label5.Location = new System.Drawing.Point(283, 136);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(109, 20);
             this.label5.TabIndex = 19;
@@ -351,20 +354,46 @@ namespace Lets_Roll
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Coral;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(593, 613);
+            this.label6.Location = new System.Drawing.Point(684, 640);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(250, 20);
+            this.label6.Size = new System.Drawing.Size(153, 20);
             this.label6.TabIndex = 21;
-            this.label6.Text = "Karekteri Almak için kalan süre :";
+            this.label6.Text = "Claim Reset Time :";
             // 
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox6.Location = new System.Drawing.Point(884, 609);
+            this.textBox6.Location = new System.Drawing.Point(884, 636);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 27);
             this.textBox6.TabIndex = 22;
-            this.textBox6.Text = "10";
+            this.textBox6.Text = "15";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Salmon;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Location = new System.Drawing.Point(268, 185);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(153, 20);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "Claim Reset Time :";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox7.Location = new System.Drawing.Point(447, 181);
+            this.textBox7.Multiline = true;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(116, 29);
+            this.textBox7.TabIndex = 24;
+            this.textBox7.Text = "60";
+            // 
+            // timer2
+            // 
+            this.timer2.Interval = 1000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // RollAnaSayfa
             // 
@@ -373,6 +402,8 @@ namespace Lets_Roll
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.SystemColors.MenuBar;
             this.ClientSize = new System.Drawing.Size(1435, 667);
+            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox1);
@@ -445,5 +476,8 @@ namespace Lets_Roll
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Timer timer2;
     }
 }
