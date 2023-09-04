@@ -61,7 +61,7 @@ namespace Lets_Roll
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
-            this.ClientSize = new System.Drawing.Size(1080, 538);
+            this.ClientSize = new System.Drawing.Size(1075, 558);
             this.Controls.Add(this.rolleyelimbutonu);
             this.Controls.Add(this.yetkiligirisibutonu);
             this.Name = "GirisSayfası";

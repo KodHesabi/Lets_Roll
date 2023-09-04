@@ -216,7 +216,7 @@ namespace Lets_Roll
             // 
             this.button1.BackColor = System.Drawing.Color.Yellow;
             this.button1.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(1180, 632);
+            this.button1.Location = new System.Drawing.Point(1183, 630);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(224, 50);
             this.button1.TabIndex = 12;
@@ -325,7 +325,7 @@ namespace Lets_Roll
             // 
             // timer1
             // 
-            this.timer1.Interval = 1000;
+            this.timer1.Interval = 60000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // textBox1
@@ -354,16 +354,16 @@ namespace Lets_Roll
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Coral;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(684, 640);
+            this.label6.Location = new System.Drawing.Point(575, 649);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(153, 20);
+            this.label6.Size = new System.Drawing.Size(272, 20);
             this.label6.TabIndex = 21;
-            this.label6.Text = "Claim Reset Time :";
+            this.label6.Text = "Karekteri Almak için kalan süreniz :";
             // 
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox6.Location = new System.Drawing.Point(884, 636);
+            this.textBox6.Location = new System.Drawing.Point(891, 644);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 27);
             this.textBox6.TabIndex = 22;
@@ -401,7 +401,7 @@ namespace Lets_Roll
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.ClientSize = new System.Drawing.Size(1435, 667);
+            this.ClientSize = new System.Drawing.Size(1435, 688);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox6);
