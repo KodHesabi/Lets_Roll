@@ -33,6 +33,35 @@ namespace Lets_Roll
             return Convert.ToString( MessageBox.Show("Seçim Yapınız"));
         }
 
+        public int random()
+        {
+            int randomkontrol1,randomkontrol2;
+
+            Random a = new Random();
+            int random = a.Next(1, 29);
+            randomkontrol1 = random;
+
+            random = a.Next(1, 29);
+
+
+            if (randomkontrol1 == random)
+            {
+                random = a.Next(1, 29);
+                
+
+                return random;
+            }
+            
+            else
+            {
+                return random;
+
+            }
+
+           
+         
+        }
+
 
         int i = 5;
         KarekterlerContext karekterler1 = new KarekterlerContext();
@@ -40,21 +69,19 @@ namespace Lets_Roll
         {
             timer1.Enabled = true;
             timer2.Enabled = true;
-            Random a = new Random();
-            int random = a.Next(1,29);
-            
+            textBox8.Text = Convert.ToString(random());
+          
 
-
-            if (checkBox1.Checked == false && checkBox2.Checked == false && checkBox3.Checked == false)
+            if (checkBox1.Checked == false && checkBox2.Checked == false && checkBox3.Checked == false && i>0)
             {
                 MessageBox.Show("Lütfen roll atmak istediğiniz türü seçiniz...!");
 
             }
 
-            else if (checkBox1.Checked == true && checkBox2.Checked == true && checkBox3.Checked == false && i>1 
-            || checkBox1.Checked == true && checkBox2.Checked == false && checkBox3.Checked == true && i>1
-            || checkBox1.Checked == false && checkBox2.Checked == true && checkBox3.Checked == true && i>1
-            || checkBox1.Checked == true && checkBox2.Checked == true && checkBox3.Checked == true  && i>1)
+            else if (checkBox1.Checked == true && checkBox2.Checked == true && checkBox3.Checked == false && i>0 
+            || checkBox1.Checked == true && checkBox2.Checked == false && checkBox3.Checked == true && i>0
+            || checkBox1.Checked == false && checkBox2.Checked == true && checkBox3.Checked == true && i>0
+            || checkBox1.Checked == true && checkBox2.Checked == true && checkBox3.Checked == true  && i>0)
             {
                 MessageBox.Show("Lütfen roll atmak için tek bir tür seçiniz...!");
 
@@ -65,7 +92,7 @@ namespace Lets_Roll
 
                 if (checkBox1.Checked && i == 5)
                 {
-                    var k = karekterler1.Waifu.Find(random);
+                    var k = karekterler1.Waifu.Find(random());
                     listBox1.Items.Add(k.KarekterAdi);
                     listBox1.Items.Add(k.KarekterRank);
                     listBox1.Items.Add(k.SeriAdi);
@@ -80,7 +107,7 @@ namespace Lets_Roll
 
                 else if (checkBox1.Checked && i == 4)
                 {
-                    var k = karekterler1.Waifu.Find(random);
+                    var k = karekterler1.Waifu.Find(random());
                     listBox2.Items.Add(k.KarekterAdi);
                     listBox2.Items.Add(k.KarekterRank);
                     listBox2.Items.Add(k.SeriAdi);
@@ -93,7 +120,7 @@ namespace Lets_Roll
 
                 else if (checkBox1.Checked && i == 3)
                 {
-                    var k = karekterler1.Waifu.Find(random);
+                    var k = karekterler1.Waifu.Find(random());
                     listBox3.Items.Add(k.KarekterAdi);
                     listBox3.Items.Add(k.KarekterRank);
                     listBox3.Items.Add(k.SeriAdi);
@@ -106,7 +133,7 @@ namespace Lets_Roll
 
                 else if (checkBox1.Checked && i == 2)
                 {
-                    var k = karekterler1.Waifu.Find(random);
+                    var k = karekterler1.Waifu.Find(random());
                     listBox4.Items.Add(k.KarekterAdi);
                     listBox4.Items.Add(k.KarekterRank);
                     listBox4.Items.Add(k.SeriAdi);
@@ -119,7 +146,7 @@ namespace Lets_Roll
 
                 else if (checkBox1.Checked && i == 1)
                 {
-                    var k = karekterler1.Waifu.Find(random);
+                    var k = karekterler1.Waifu.Find(random());
                     listBox5.Items.Add(k.KarekterAdi);
                     listBox5.Items.Add(k.KarekterRank);
                     listBox5.Items.Add(k.SeriAdi);
@@ -137,7 +164,7 @@ namespace Lets_Roll
 
                 if (checkBox2.Checked && i == 5)
                 {
-                    var k = karekterler1.Husband.Find(random);
+                    var k = karekterler1.Husband.Find(random());
                     listBox1.Items.Add(k.KarekterAdi);
                     listBox1.Items.Add(k.KarekterRank);
                     listBox1.Items.Add(k.SeriAdi);
@@ -152,7 +179,7 @@ namespace Lets_Roll
 
                 else if (checkBox2.Checked && i == 4)
                 {
-                    var k = karekterler1.Husband.Find(random);
+                    var k = karekterler1.Husband.Find(random());
                     listBox2.Items.Add(k.KarekterAdi);
                     listBox2.Items.Add(k.KarekterRank);
                     listBox2.Items.Add(k.SeriAdi);
@@ -165,7 +192,7 @@ namespace Lets_Roll
 
                 else if (checkBox2.Checked && i == 3)
                 {
-                    var k = karekterler1.Husband.Find(random);
+                    var k = karekterler1.Husband.Find(random());
                     listBox3.Items.Add(k.KarekterAdi);
                     listBox3.Items.Add(k.KarekterRank);
                     listBox3.Items.Add(k.SeriAdi);
@@ -178,7 +205,7 @@ namespace Lets_Roll
 
                 else if (checkBox2.Checked && i == 2)
                 {
-                    var k = karekterler1.Husband.Find(random);
+                    var k = karekterler1.Husband.Find(random());
                     listBox4.Items.Add(k.KarekterAdi);
                     listBox4.Items.Add(k.KarekterRank);
                     listBox4.Items.Add(k.SeriAdi);
@@ -191,7 +218,7 @@ namespace Lets_Roll
 
                 else if (checkBox2.Checked && i == 1)
                 {
-                    var k = karekterler1.Husband.Find(random);
+                    var k = karekterler1.Husband.Find(random());
                     listBox5.Items.Add(k.KarekterAdi);
                     listBox5.Items.Add(k.KarekterRank);
                     listBox5.Items.Add(k.SeriAdi);
@@ -202,7 +229,7 @@ namespace Lets_Roll
 
                 }
 
-                else if (checkBox1.Checked && i == 0 || checkBox2.Checked && i == 0 || checkBox3.Checked && i == 0)
+                else if (i==0)
                 {
                     MessageBox.Show("Roll Hakkınız Bitti");
                 }
@@ -362,32 +389,12 @@ namespace Lets_Roll
         
         private void timer1_Tick(object sender, EventArgs e)
         {
-           
-            textBox7.Text = Convert.ToString(sayac2);
-            if (sayac2 !=0)
-            {
+
+            
+                textBox7.Text = Convert.ToString(sayac2);
                 sayac2--;
-            }
-          
-              
-           
-            if (checkBox1.Checked == false && checkBox2.Checked == false && checkBox3.Checked == false)
-            {
-                timer1.Enabled = false;
+                
 
-            }
-
-            else if (checkBox1.Checked == true && checkBox2.Checked == true && checkBox3.Checked == false && i > 1
-            || checkBox1.Checked == true && checkBox2.Checked == false && checkBox3.Checked == true && i > 1
-            || checkBox1.Checked == false && checkBox2.Checked == true && checkBox3.Checked == true && i > 1
-            || checkBox1.Checked == true && checkBox2.Checked == true && checkBox3.Checked == true && i > 1)
-            {
-                timer1.Enabled = false;
-            }
-
-
-            else
-            {
                 textBox2.Text = Convert.ToString(sayac);
                 sayac--;
 
@@ -423,7 +430,7 @@ namespace Lets_Roll
                     textBox4.Text = "";
                 }
 
-            }
+            
             
 
         }
@@ -431,18 +438,18 @@ namespace Lets_Roll
         int karektersayac = 15;
         private void timer2_Tick(object sender, EventArgs e)
         {
-            if (checkBox1.Checked == false && checkBox2.Checked == false && checkBox3.Checked == false)
+            if (checkBox1.Checked == false && checkBox2.Checked == false && checkBox3.Checked == false && i==5)
             {
-                timer1.Enabled = false;
+                timer2.Enabled = false;
 
             }
 
-            else if (checkBox1.Checked == true && checkBox2.Checked == true && checkBox3.Checked == false && i > 1
-            || checkBox1.Checked == true && checkBox2.Checked == false && checkBox3.Checked == true && i > 1
-            || checkBox1.Checked == false && checkBox2.Checked == true && checkBox3.Checked == true && i > 1
-            || checkBox1.Checked == true && checkBox2.Checked == true && checkBox3.Checked == true && i > 1)
+            else if (checkBox1.Checked == true && checkBox2.Checked == true && checkBox3.Checked == false && i == 5
+            || checkBox1.Checked == true && checkBox2.Checked == false && checkBox3.Checked == true && i == 5
+            || checkBox1.Checked == false && checkBox2.Checked == true && checkBox3.Checked == true && i == 5
+            || checkBox1.Checked == true && checkBox2.Checked == true && checkBox3.Checked == true && i == 5)
             {
-                timer1.Enabled = false;
+                timer2.Enabled = false;
             }
 
             else
