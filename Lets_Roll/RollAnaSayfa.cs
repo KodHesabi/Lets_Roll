@@ -224,7 +224,7 @@ namespace Lets_Roll
 
             if(textBox6.Text=="0" && textBox3.Text=="")
             {
-                MessageBox.Show("Geçti Borun pazarı Sür eşeği niğdeye, Zaman Doldu");
+                MessageBox.Show("Geçti Bolu pazarı Sür eşeği niğdeye, Zaman Doldu");
             }
             else
             {
