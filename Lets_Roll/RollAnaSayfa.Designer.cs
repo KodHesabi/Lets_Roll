@@ -329,7 +329,7 @@ namespace Lets_Roll
             // 
             // timer1
             // 
-            this.timer1.Interval = 60000;
+            this.timer1.Interval = 400;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // textBox1
@@ -357,10 +357,10 @@ namespace Lets_Roll
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Coral;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(848, 759);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(843, 758);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(272, 20);
+            this.label6.Size = new System.Drawing.Size(299, 24);
             this.label6.TabIndex = 21;
             this.label6.Text = "Karekteri Almak için kalan süreniz :";
             // 
@@ -401,28 +401,28 @@ namespace Lets_Roll
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(25, 233);
+            this.textBox8.Location = new System.Drawing.Point(85, 236);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(100, 22);
             this.textBox8.TabIndex = 25;
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(178, 233);
+            this.textBox9.Location = new System.Drawing.Point(223, 237);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(100, 22);
             this.textBox9.TabIndex = 26;
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(338, 233);
+            this.textBox10.Location = new System.Drawing.Point(350, 237);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(100, 22);
             this.textBox10.TabIndex = 27;
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(481, 233);
+            this.textBox11.Location = new System.Drawing.Point(481, 237);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(100, 22);
             this.textBox11.TabIndex = 28;

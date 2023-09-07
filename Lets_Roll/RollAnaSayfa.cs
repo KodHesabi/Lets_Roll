@@ -35,31 +35,61 @@ namespace Lets_Roll
 
         public int random()
         {
-            int randomkontrol1,randomkontrol2;
-
+            int eleman = 1;
+            int eleman1 = 2;
             Random a = new Random();
-            int random = a.Next(1, 29);
-            randomkontrol1 = random;
-
-            random = a.Next(1, 29);
-
-
-            if (randomkontrol1 == random)
-            {
-                random = a.Next(1, 29);
-                
-
-                return random;
-            }
+            int random = a.Next(2, 29);
+            List<int> listNumbers = new List<int>();
             
-            else
+            listNumbers.Add(eleman);
+            listNumbers.Add(eleman1);
+
+            textBox8.Text = Convert.ToString(random);
+
+            for (int i=0 ; i<=listNumbers.Count; i++)
             {
-                return random;
+                if(random == listNumbers[i])
+                {
+                    random = a.Next(2, 29);
+                    textBox9.Text = Convert.ToString(random);
+
+                }
+                else
+                {
+                    listNumbers.Add(random);
+                    textBox10.Text = Convert.ToString(random);
+                    return random;
+                }
 
             }
+            listNumbers.Clear();
+            return 0;
 
-           
-         
+
+            /*
+                        Random a = new Random();
+                        int random = a.Next(1, 29);
+                        textBox8.Text = Convert.ToString(random);
+
+                        random = a.Next(1, 29);
+                        textBox9.Text = Convert.ToString(random);
+
+                        string strrandom = Convert.ToString(random);
+                        textBox10.Text = strrandom;
+
+
+                        if (strrandom == textBox8.Text)
+                        {
+                            random = a.Next(1, 29);
+                            textBox11.Text = Convert.ToString(random);
+                            return random;
+
+                        }
+
+                        return random;
+
+
+            */
         }
 
 
@@ -69,8 +99,8 @@ namespace Lets_Roll
         {
             timer1.Enabled = true;
             timer2.Enabled = true;
-            textBox8.Text = Convert.ToString(random());
-          
+
+
 
             if (checkBox1.Checked == false && checkBox2.Checked == false && checkBox3.Checked == false && i>0)
             {
@@ -108,6 +138,7 @@ namespace Lets_Roll
                 else if (checkBox1.Checked && i == 4)
                 {
                     var k = karekterler1.Waifu.Find(random());
+          
                     listBox2.Items.Add(k.KarekterAdi);
                     listBox2.Items.Add(k.KarekterRank);
                     listBox2.Items.Add(k.SeriAdi);
