@@ -62,36 +62,42 @@
     <Compile Include="Database_islemleri.Designer.cs">
       <DependentUpon>Database_islemleri.cs</DependentUpon>
     </Compile>
-    <Compile Include="GirisFormu.cs">
+    <Compile Include="GirisSayfası.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GirisFormu.Designer.cs">
-      <DependentUpon>GirisFormu.cs</DependentUpon>
+    <Compile Include="GirisSayfası.Designer.cs">
+      <DependentUpon>GirisSayfası.cs</DependentUpon>
     </Compile>
-    <Compile Include="Haremleri_Görüntüle.cs">
+    <Compile Include="Haremler\Haremleri_Görüntüle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Haremleri_Görüntüle.Designer.cs">
+    <Compile Include="Haremler\Haremleri_Görüntüle.Designer.cs">
       <DependentUpon>Haremleri_Görüntüle.cs</DependentUpon>
     </Compile>
-    <Compile Include="Harem_İşlemleri.cs">
+    <Compile Include="Haremler\Harem_İşlemleri.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Harem_İşlemleri.Designer.cs">
+    <Compile Include="Haremler\Harem_İşlemleri.Designer.cs">
       <DependentUpon>Harem_İşlemleri.cs</DependentUpon>
     </Compile>
     <Compile Include="Husband.cs" />
     <Compile Include="KarekterlerContext.cs" />
-    <Compile Include="Kullanıcı_Giris_Sayfası.cs">
+    <Compile Include="Kullanıcı Klasorü\KullanıcıAnasayfa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Kullanıcı_Giris_Sayfası.Designer.cs">
+    <Compile Include="Kullanıcı Klasorü\KullanıcıAnasayfa.Designer.cs">
+      <DependentUpon>KullanıcıAnasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanıcı Klasorü\Kullanıcı_Giris_Sayfası.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanıcı Klasorü\Kullanıcı_Giris_Sayfası.Designer.cs">
       <DependentUpon>Kullanıcı_Giris_Sayfası.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kullanıcı_Kaydol.cs">
+    <Compile Include="Kullanıcı Klasorü\Kullanıcı_Kaydol.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Kullanıcı_Kaydol.Designer.cs">
+    <Compile Include="Kullanıcı Klasorü\Kullanıcı_Kaydol.Designer.cs">
       <DependentUpon>Kullanıcı_Kaydol.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
@@ -105,34 +111,37 @@
     <Compile Include="Waifu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="YetkiliAnasayfa.cs">
+    <Compile Include="Yetkili Klasorü\YetkiliAnasayfa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="YetkiliAnasayfa.Designer.cs">
+    <Compile Include="Yetkili Klasorü\YetkiliAnasayfa.Designer.cs">
       <DependentUpon>YetkiliAnasayfa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Yetkili_Giris_Sayfası.cs">
+    <Compile Include="Yetkili Klasorü\Yetkili_Giris_Sayfası.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Yetkili_Giris_Sayfası.Designer.cs">
+    <Compile Include="Yetkili Klasorü\Yetkili_Giris_Sayfası.Designer.cs">
       <DependentUpon>Yetkili_Giris_Sayfası.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Database_islemleri.resx">
       <DependentUpon>Database_islemleri.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GirisFormu.resx">
-      <DependentUpon>GirisFormu.cs</DependentUpon>
+    <EmbeddedResource Include="GirisSayfası.resx">
+      <DependentUpon>GirisSayfası.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Haremleri_Görüntüle.resx">
+    <EmbeddedResource Include="Haremler\Haremleri_Görüntüle.resx">
       <DependentUpon>Haremleri_Görüntüle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Harem_İşlemleri.resx">
+    <EmbeddedResource Include="Haremler\Harem_İşlemleri.resx">
       <DependentUpon>Harem_İşlemleri.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Kullanıcı_Giris_Sayfası.resx">
+    <EmbeddedResource Include="Kullanıcı Klasorü\KullanıcıAnasayfa.resx">
+      <DependentUpon>KullanıcıAnasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanıcı Klasorü\Kullanıcı_Giris_Sayfası.resx">
       <DependentUpon>Kullanıcı_Giris_Sayfası.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Kullanıcı_Kaydol.resx">
+    <EmbeddedResource Include="Kullanıcı Klasorü\Kullanıcı_Kaydol.resx">
       <DependentUpon>Kullanıcı_Kaydol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -147,10 +156,10 @@
     <EmbeddedResource Include="RollAnaSayfa.resx">
       <DependentUpon>RollAnaSayfa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="YetkiliAnasayfa.resx">
+    <EmbeddedResource Include="Yetkili Klasorü\YetkiliAnasayfa.resx">
       <DependentUpon>YetkiliAnasayfa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Yetkili_Giris_Sayfası.resx">
+    <EmbeddedResource Include="Yetkili Klasorü\Yetkili_Giris_Sayfası.resx">
       <DependentUpon>Yetkili_Giris_Sayfası.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

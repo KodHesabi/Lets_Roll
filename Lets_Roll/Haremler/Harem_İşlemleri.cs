@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace Lets_Roll
 {
-    public partial class GirisSayfası : Form
+    public partial class Harem_İşlemleri : Form
     {
-        public GirisSayfası()
+        public Harem_İşlemleri()
         {
             InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Lets_Roll.Haremleri_Görüntüle hrmgrnt = new Lets_Roll.Haremleri_Görüntüle();
+            hrmgrnt.Show();
         }
     }
 }

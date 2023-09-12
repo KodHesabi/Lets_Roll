@@ -18,14 +18,18 @@ namespace Lets_Roll
             Application.SetCompatibleTextRenderingDefault(false);
 
             //Application.Run(new Database_islemleri());
-            
-            
-            Application.Run(new RollAnaSayfa());
 
-            
+
+            //Application.Run(new RollAnaSayfa());
+
+
             //Application.Run(new YetkiliAnasayfa());
-           
-            
+
+             Application.Run(new GirisSayfası());
+
+            //Application.Run(new Yetkili_Giris_Sayfası());
+
+
         }
     }
 }

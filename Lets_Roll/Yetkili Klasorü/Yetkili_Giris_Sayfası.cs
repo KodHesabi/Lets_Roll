@@ -16,5 +16,13 @@ namespace Lets_Roll
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Lets_Roll.YetkiliAnasayfa yetkilianasayfa = new Lets_Roll.YetkiliAnasayfa();
+            yetkilianasayfa.Show();
+
+          
+        }
     }
 }

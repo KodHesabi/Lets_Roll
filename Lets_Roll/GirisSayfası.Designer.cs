@@ -42,8 +42,9 @@ namespace Lets_Roll
             this.yetkiligirisibutonu.Name = "yetkiligirisibutonu";
             this.yetkiligirisibutonu.Size = new System.Drawing.Size(309, 180);
             this.yetkiligirisibutonu.TabIndex = 0;
-            this.yetkiligirisibutonu.Text = "Yetkişi Girişi";
+            this.yetkiligirisibutonu.Text = "Yetkili Girişi";
             this.yetkiligirisibutonu.UseVisualStyleBackColor = false;
+            this.yetkiligirisibutonu.Click += new System.EventHandler(this.yetkiligirisibutonu_Click);
             // 
             // rolleyelimbutonu
             // 
@@ -55,13 +56,14 @@ namespace Lets_Roll
             this.rolleyelimbutonu.TabIndex = 1;
             this.rolleyelimbutonu.Text = "Rolleyelim";
             this.rolleyelimbutonu.UseVisualStyleBackColor = false;
+            this.rolleyelimbutonu.Click += new System.EventHandler(this.rolleyelimbutonu_Click);
             // 
             // GirisSayfası
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
-            this.ClientSize = new System.Drawing.Size(1075, 558);
+            this.ClientSize = new System.Drawing.Size(1104, 570);
             this.Controls.Add(this.rolleyelimbutonu);
             this.Controls.Add(this.yetkiligirisibutonu);
             this.Name = "GirisSayfası";
