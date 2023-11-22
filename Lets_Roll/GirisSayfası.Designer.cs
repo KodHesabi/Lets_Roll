@@ -69,6 +69,7 @@ namespace Lets_Roll
             this.Name = "GirisSayfası";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Giriş";
+            this.Load += new System.EventHandler(this.GirisSayfası_Load);
             this.ResumeLayout(false);
 
         }

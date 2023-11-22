@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.IO;
 namespace Lets_Roll
 {
     public partial class RollAnaSayfa : Form
@@ -95,12 +95,57 @@ namespace Lets_Roll
 
         int i = 5;
         KarekterlerContext karekterler1 = new KarekterlerContext();
+        KarekterlerContext date = new KarekterlerContext();
+   
         private void RollButonu_Click(object sender, EventArgs e)
         {
-            timer1.Enabled = true;
-            timer2.Enabled = true;
+             timer1.Enabled = true;
+             timer2.Enabled = true;
+            
+
+            // Sadece 1 defalıgına saat tutacagız veritabanında
+            DateTime globalSaat = DateTime.UtcNow;
+            TimeSpan saat = globalSaat.TimeOfDay;
+            string bayrakDosyasi = "bayrak.txt2";
+
+            if (!File.Exists(bayrakDosyasi))
+            {
+                date.DateSayac.Add
+                  (
+
+                  new DateSayac
+                  {
+                      Date = saat,
+                  }
+
+                  );
+                var k = date.SaveChanges();
+
+                if (k != 0)
+                {
+                    textBox12.Text = Convert.ToString(globalSaat);
+                    MessageBox.Show("Kaydedildi");
+                }
+                
+
+                // Bayrak dosyasını oluştur
+                File.Create(bayrakDosyasi);
+            }
 
 
+            var d = date.DateSayac.Find(2);
+
+            textBox12.Text = Convert.ToString(d.Date);
+
+            DateTime tarih = DateTime.UtcNow;
+            TimeSpan saat2 = tarih.TimeOfDay;
+
+            TimeSpan sayacsaat = saat2 - saat;
+
+            textBox13.Text = Convert.ToString(sayacsaat);
+
+
+            // Saat tutma kodu bitti
 
             if (checkBox1.Checked == false && checkBox2.Checked == false && checkBox3.Checked == false && i>0)
             {

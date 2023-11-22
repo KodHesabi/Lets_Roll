@@ -14,5 +14,6 @@ namespace Lets_Roll
         public DbSet<Husband> Husband { get; set; }
 
         public DbSet<MixTablosu> MixTablosu { get; set; }
+        public DbSet<DateSayac> DateSayac { get; set; }
     }
 }

@@ -19,7 +19,7 @@ namespace Lets_Roll
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+            
 
             Lets_Roll.Kullanıcı_Klasorü.KullanıcıAnasayfa kullanıcısayfa = new Lets_Roll.Kullanıcı_Klasorü.KullanıcıAnasayfa();
             kullanıcısayfa.Show();

@@ -17,15 +17,17 @@ namespace Lets_Roll
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            //Application.Run(new Database_islemleri());
+            Application.Run(new Database_islemleri());
 
 
             //Application.Run(new RollAnaSayfa());
 
+            //Application.Run(new Kullanıcı_Klasorü.KullanıcıAnasayfa());
+
 
             //Application.Run(new YetkiliAnasayfa());
 
-             Application.Run(new GirisSayfası());
+            // Application.Run(new GirisSayfası());
 
             //Application.Run(new Yetkili_Giris_Sayfası());
 

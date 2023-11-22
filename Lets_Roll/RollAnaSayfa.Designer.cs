@@ -67,6 +67,8 @@ namespace Lets_Roll
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -329,7 +331,7 @@ namespace Lets_Roll
             // 
             // timer1
             // 
-            this.timer1.Interval = 400;
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // textBox1
@@ -427,6 +429,20 @@ namespace Lets_Roll
             this.textBox11.Size = new System.Drawing.Size(100, 22);
             this.textBox11.TabIndex = 28;
             // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(810, 233);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(211, 22);
+            this.textBox12.TabIndex = 29;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(1073, 238);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(211, 22);
+            this.textBox13.TabIndex = 30;
+            // 
             // RollAnaSayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -434,6 +450,8 @@ namespace Lets_Roll
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.SystemColors.MenuBar;
             this.ClientSize = new System.Drawing.Size(1732, 803);
+            this.Controls.Add(this.textBox13);
+            this.Controls.Add(this.textBox12);
             this.Controls.Add(this.textBox11);
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.textBox9);
@@ -520,5 +538,7 @@ namespace Lets_Roll
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox textBox13;
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Lets_Roll
 {
@@ -28,6 +29,15 @@ namespace Lets_Roll
         {
             Lets_Roll.Yetkili_Giris_Sayfası ytklgiris = new Lets_Roll.Yetkili_Giris_Sayfası();
             ytklgiris.Show();
+        }
+
+        
+        private void GirisSayfası_Load(object sender, EventArgs e)
+        {
+            
+          
+              
+
         }
     }
 }
